@@ -10,43 +10,42 @@
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link href="./assets/style.css">
+    <link href="style.css" rel="stylesheet">
     <title>Weather Forecast</title>
 </head>
 
 <body>
-    
-        <div class="container-fluid">
-            <header class="card text-center shadow p-3 mb-5 mt-3">
-                <h1 class="display-4">Weather Forecast</h1>
-            </header>
-            
-        <div class="container-fluid">
+    <header class="card text-center container-fluid shadow p-3 mb-5 mt-3">
+        <h1 class="display-4">Weather Forecast</h1>
+    </header>
+
+        <!-- search div -->
+        <div id="locationSearch" class="container-fluid">
             <div class="col-4 text-center shadow p-3 mb-5 mt-3">
-                <input type="text" id="locationSearch" class="col-10" placeholder="Search city or Zip code">
+                <!-- searchfield -->
+                <input  id="searchField" type="text" class="col-10" placeholder="Search city or Zip code">
                 <button type="button" class="btn btn-dark"><i class="bi bi-search"></i></button>
-                <!-- <table class="table table-hover"> -->
-                    <!-- <tr> -->
             </div>
+            <div id="previousSearchField" class="card text-center container-fluid shadow p-3 mb-5 mt-3"></div>
+
         </div>
-        
-        
-        
-        
-        
-        
-        
-        </div>
-
-
-
-
-
-        <div class="card-footer">
+            <div class="card-footer">
             
-        </div>
+            </div>
+
+
+    <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/plugin/utc.min.js" 
+        integrity="sha512-m00bfmYnAl3plEBlQfeQUhw/U2uvmw29V2+jxSWpAjankMWS+zAsjezbKWDEJNXqWq9o9qQZSOiA2RKDpa4D5w==" 
+        crossorigin="anonymous">
+    </script>
+    <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/plugin/timezone.min.js" 
+        integrity="sha512-pslqxxHAYPCxaSeFSmXXxDkLejD5dbFVC66aiVq0z4v7VTJBU+wqcG1OpNh4p3MjS2D6NCwz/H2QmSc7dXxryg==" 
+        crossorigin="anonymous">
+    </script>
 
     
-    <script src="./assets/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>   
