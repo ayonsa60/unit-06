@@ -20,18 +20,30 @@
     </header>
 
         <!-- search div -->
-        <div id="locationSearch" class="container-fluid">
+        <div class="container-fluid">
             <div class="col-4 text-center shadow p-3 mb-5 mt-3">
+                
                 <!-- searchfield -->
-                <input  id="searchField" type="text" class="col-10" placeholder="Search city or Zip code">
-                <button type="button" class="btn btn-dark"><i class="bi bi-search"></i></button>
+                    <input  id="searchField" type="text" class="col-10" placeholder="Search city or Zip code">
+                    <button id="locationSearch" type="button" class="btn btn-dark"><i class="bi bi-search"></i></button>
             </div>
-            <div id="previousSearchField" class="card text-center container-fluid shadow p-3 mb-5 mt-3"></div>
-
-        </div>
-            <div class="card-footer">
+            <div id="previousSearchField" class="col-4 text-center shadow p-3 mb-5 mt-3"></div>
             
+        </div>
+
+        <div class="col-4 text-center shadow p-3 mb-5 mt-3">
+            <div id="currentDay">
+
             </div>
+
+            <div id="weatherForecast">
+
+            </div>
+        </div>
+
+<div class="card-footer">
+
+</div>
 
 
     <script 

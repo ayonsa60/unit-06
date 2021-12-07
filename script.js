@@ -20,6 +20,11 @@ let previousSearchField= document.querySelector('#previousSearchField')
 
 function renderPreviousSearchField() {
     previousSearchField.innerHTML = '';
+
+    for (let i = 0; i <= previousSearchField.length; i++) {
+        let searchButton = document.createElement('button');
+        searchButton.setAttribute('type', 'button');
+    }
 }
 
 function getPreviousSearch() {
