@@ -16,7 +16,9 @@ let apiKey = '1d62e0d5f6728111b13e38cdd76d1f28';
 
 let locationSearch = document.querySelector('#locationSearch');
 let searchField = document.querySelector('#searchField');
-let previousSearchField= document.querySelector('#previousSearchField')
+let previousSearchField = document.querySelector('#previousSearchField');
+let currentDay = document.querySelector('#currentDay');
+let weatherForecast = document.querySelector('#weatherForecast');
 
 function renderPreviousSearchField() {
     previousSearchField.innerHTML = '';

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&appid={API key}">
+    <!-- <link href="https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&appid={API key}"> -->
     <link
     rel="stylesheet" 
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -20,30 +20,32 @@
     </header>
 
         <!-- search div -->
-        <div class="container-fluid">
-            <div class="col-4 text-center shadow p-3 mb-5 mt-3">
+    <div class="container-fluid">
+        <div class="col-4 text-center shadow p-3 mb-5 mt-3">
                 
                 <!-- searchfield -->
                     <input  id="searchField" type="text" class="col-10" placeholder="Search city or Zip code">
                     <button id="locationSearch" type="button" class="btn btn-dark"><i class="bi bi-search"></i></button>
-            </div>
             <div id="previousSearchField" class="col-4 text-center shadow p-3 mb-5 mt-3"></div>
             
-        </div>
+        
 
-        <div class="col-4 text-center shadow p-3 mb-5 mt-3">
-            <div id="currentDay">
+            <div class="col-4 text-center shadow p-3 mb-5 mt-3">
+                <!-- currentDay -->
+                <div id="currentDay">
 
+                </div>
+                <!-- forecast -->
+                <div id="weatherForecast">
+
+                </div>
             </div>
-
-            <div id="weatherForecast">
-
-            </div>
         </div>
+    </div>
 
-<div class="card-footer">
+<footer class="card-footer">
 
-</div>
+</footer>
 
 
     <script 
